@@ -1,11 +1,42 @@
+.employee-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+
 .employee-card{
     display: flex;
+    align-items: center;
     gap: 20px;
-    border: 3px solid rgb(104, 104, 104);
-    width: fit-content;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 8px;
     padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .employee-card img{
    border-radius: 50%;
+   width: 88px;
+   height: 88px;
+}
+
+.employee-name{
+    font-size: 24px;
+    color: rgb(75, 75, 75);
+    margin: 0;
+}
+
+
+.employee-details-modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: none;
 }
